@@ -1,0 +1,50 @@
+@import url("constants.css");
+
+.footer {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.footer li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: var(--accent-color);
+}
+
+.footer i {
+    margin-right: 8px;
+}
+
+.footer p {
+    margin-top: 15px;
+    color: var(--secondary-text-color);
+    font-size: 14px;
+}
+
+
+@media screen and (max-width: 800px) {
+    .footer h3 {
+        padding-left: 5px;
+    }
+
+    .footer a {
+        padding-left: 5px;
+    }
+}

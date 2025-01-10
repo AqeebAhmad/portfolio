@@ -1,0 +1,15 @@
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #f0f0f0;
+    --primary-text-color: #333333;
+    --secondary-text-color: #666665;
+    --accent-color: rgb(0, 200, 255);
+}
+
+.darkmode {
+    --primary-color: #1b1b1b;
+    --secondary-color: #171717;
+    --primary-text-color: #ffffff;
+    --secondary-text-color: #cccccc;
+    --accent-color: rgb(0, 200, 255);
+}

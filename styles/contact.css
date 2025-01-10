@@ -1,0 +1,70 @@
+@import url("styles.css");
+
+.heading {
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    background-color: var(--secondary-color);
+    color: var(--primary-text-color);
+}
+
+.heading h1 {
+    padding-top: 125px;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.content_container {
+    display: flex;
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.1);
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.content_container h2 {
+    font-size: 20px;
+}
+
+.contact-link {
+    display: inline-block;
+    background-color: var(--primary-text-color);
+    color: var(--primary-color);
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: 0.3s ease;
+}
+
+.contact-link:hover {
+    background-color: var(--secondary-text-color);
+}
+
+#contact_info_content_container {
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.1);
+    padding-bottom: 40px;
+}
+
+#contact_info_content_container h2 {
+    padding-top: 20px;
+}
+
+.information_cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+    border: 2px solid #cccccc;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    width: 40%;
+    transition: all 0.3s ease;
+}
