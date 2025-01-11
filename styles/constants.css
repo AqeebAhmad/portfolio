@@ -9,7 +9,7 @@
 .darkmode {
     --primary-color: #1b1b1b;
     --secondary-color: #171717;
-    --primary-text-color: #ffffff;
-    --secondary-text-color: #cccccc;
+    --primary-text-color: #dddddd;
+    --secondary-text-color: #bbbbbb;
     --accent-color: rgb(0, 200, 255);
 }
