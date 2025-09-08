@@ -8,7 +8,7 @@ function openModal(images) {
     // Clear the current slides
     modalSlides.innerHTML = '';
 
-    // Create new slides for the selected project
+    // Add new slides
     images.forEach(img => {
         const slide = document.createElement("div");
         slide.classList.add("slides");
@@ -24,6 +24,7 @@ function openModal(images) {
 function closeModal() {
     const modal = document.getElementById("imageModal");
     modal.style.display = "none";
+    slideIndex = 0;
 }
 
 // Navigate between slides
