@@ -1,220 +1,283 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>  
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Aqeeb Ahmad">
-        <title>Projects</title>
-        <link rel="stylesheet" href="styles/projects.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <link rel="shortcut icon" type="image/x-icon" href="res/images/icon.ico" type="image/png">
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="crossorigin="anonymous"></script>
-        <script src="scripts/projects.js"></script>
-        <script src="scripts/darkmode.js" defer></script>
-    </head>
-    <body>
-        <!-- Navbar -->
-        <nav class="navbar">
-            <input type="checkbox" id="checkbox">
-                <label for="checkbox">
-                    <div class="navbar_button">
-                        <span class="line"></span>
-                        <span class="line"></span>
-                        <span class="line"></span>
-                    </div>
-                </label>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
-        <!-- Header -->
-        <header class="heading">
-            <button id="theme-switch">
-                <i class="fas fa-moon"></i>
-                <i class="fas fa-sun"></i>
-            </button>
-            <h1>Projects</h1>
-        </header>
-
-        <!-- Modal -->
-        <div id="imageModal" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <div class="slideshow-container" id="modalSlides">
-                </div>
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Aqeeb Ahmad" />
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles/projects.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="res/images/icon.ico"
+      type="image/png"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/projects.js"></script>
+    <script src="scripts/darkmode.js" defer></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <input type="checkbox" id="checkbox" />
+      <label for="checkbox">
+        <div class="navbar_button">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
         </div>
+      </label>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
-        <!-- Content -->
-        <div class="content_container">
-            <div class="information_cards">
-                <h2>BrainWave</h2>
-                <div class="image-container" onclick="openModal([
+    <!-- Header -->
+    <header class="heading">
+      <button id="theme-switch">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+      </button>
+      <h1>Projects</h1>
+    </header>
+
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="slideshow-container" id="modalSlides"></div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content_container">
+      <div class="information_cards">
+        <h2>BrainWave</h2>
+        <div
+          class="image-container"
+          onclick="openModal([
                     'brainwave/brainwave-img-2.png',
                     'brainwave/brainwave-img-3.png',
                     'brainwave/brainwave-img-4.png',
                     'brainwave/brainwave-img-5.png',
                     'brainwave/brainwave-img-6.png',
                     'brainwave/brainwave-img-7.png',
-                    ])">
-                    <img src="res/images/brainwave/brainwave-img-2.png" alt="Image of BrainWave Web App" class="initial-image">
-                    <div class="magnifying-glass">
-                        <i class="fas fa-search-plus"></i>
-                    </div>
-                </div>
-                <p>
-                    <b>Languages</b>
-                    <br>
-                    <br>JavaScript/TypeScript
-                    <br>
-                    <br>
-                    <b>Technologies</b>
-                    <br>
-                    <br>Node.js,&nbspExpress.js,&nbspAngular,&nbspTailwind,
-                    <br>&nbspSupabase
-                </p>
-            </div>
-            <div class="information_cards">
-                <h2>MyFinance</h2>
-                <div class="image-container" onclick="openModal([
+                    ])"
+        >
+          <img
+            src="res/images/brainwave/brainwave-img-2.png"
+            alt="Image of BrainWave Web App"
+            class="initial-image"
+          />
+          <div class="magnifying-glass">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+        <p>
+          <b>Languages</b>
+          <br />
+          <br />JavaScript/TypeScript
+          <br />
+          <br />
+          <b>Technologies</b>
+          <br />
+          <br />Node.js,&nbspExpress.js,&nbspAngular,&nbspTailwind,
+          <br />&nbspSupabase
+        </p>
+      </div>
+      <div class="information_cards">
+        <h2>MyFinance</h2>
+        <div
+          class="image-container"
+          onclick="openModal([
                     'myfinance/myfinance-img2.png',
                     'myfinance/myfinance-img3.png',
                     'myfinance/myfinance-img4.png',
                     'myfinance/myfinance-img1.png'
-                    ])">
-                    <img src="res/images/myfinance/myfinance-img2.png" alt="Image of MyFinance App" class="initial-image">
-                    <div class="magnifying-glass">
-                        <i class="fas fa-search-plus"></i>
-                    </div>
-                </div>
-                <p>
-                    <b>Languages</b>
-                    <br>
-                    <br>TypeScript
-                    <br>
-                    <br>
-                    <b>Technologies</b>
-                    <br>
-                    <br>React Native,&nbspExpo,&nbspPostgreSQL
-                </p>
-            </div>
-            <div class="information_cards">
-                <h2>ZeroCarbon</h2>
-                <div class="image-container" onclick="openModal([
+                    ])"
+        >
+          <img
+            src="res/images/myfinance/myfinance-img2.png"
+            alt="Image of MyFinance App"
+            class="initial-image"
+          />
+          <div class="magnifying-glass">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+        <p>
+          <b>Languages</b>
+          <br />
+          <br />TypeScript
+          <br />
+          <br />
+          <b>Technologies</b>
+          <br />
+          <br />React Native,&nbspExpo,&nbspPostgreSQL
+        </p>
+      </div>
+      <div class="information_cards">
+        <h2>ZeroCarbon</h2>
+        <div
+          class="image-container"
+          onclick="openModal([
                     'zerocarbon/zerocarbon-img3.png',
                     'zerocarbon/zerocarbon-img2.png',
                     'zerocarbon/zerocarbon-img4.png',
                     'zerocarbon/zerocarbon-img1.png',
                     'zerocarbon/zerocarbon-img5.png',
                     'zerocarbon/zerocarbon-img6.png'
-                    ])">
-                    <img src="res/images/zerocarbon/zerocarbon-img3.png" alt="Image of ZeroCarbon App" class="initial-image">
-                    <div class="magnifying-glass">
-                        <i class="fas fa-search-plus"></i>
-                    </div>
-                </div>
-                <p>
-                    <b>Languages</b>
-                    <br>
-                    <br>Java
-                    <br>
-                    <br>
-                    <b>Technologies</b>
-                    <br>
-                    <br>Firebase,&nbspMaterial-UI
-                </p>
-            </div>
-            <div class="information_cards">
-                <h2>Linux System Monitoring Tool</h2>
-                <div class="image-container" onclick="openModal([
+                    ])"
+        >
+          <img
+            src="res/images/zerocarbon/zerocarbon-img3.png"
+            alt="Image of ZeroCarbon App"
+            class="initial-image"
+          />
+          <div class="magnifying-glass">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+        <p>
+          <b>Languages</b>
+          <br />
+          <br />Java
+          <br />
+          <br />
+          <b>Technologies</b>
+          <br />
+          <br />Firebase,&nbspMaterial-UI
+        </p>
+      </div>
+      <div class="information_cards">
+        <h2>Linux System Monitoring Tool</h2>
+        <div
+          class="image-container"
+          onclick="openModal([
                     'system-monitoring-tool/system-monitoring-tool-img-1.png',
                     'system-monitoring-tool/system-monitoring-tool-img-2.png',
                     'system-monitoring-tool/system-monitoring-tool-img-3.png',
-                    ])">
-                    <img src="res/images/system-monitoring-tool/system-monitoring-tool-img-1.png" alt="Image of Linux System Monitoring Tool" class="initial-image">
-                    <div class="magnifying-glass">
-                        <i class="fas fa-search-plus"></i>
-                    </div>
-                </div>
-                <p>
-                    <b>Languages</b>
-                    <br>
-                    <br>C
-                    <br>
-                    <br>
-                    <b>Technologies</b>
-                    <br>
-                    <br>Make
-                </p>
-            </div>
-            <div class="information_cards">
-                <h2>Item Tracker</h2>
-                <div class="image-container" onclick="openModal([
+                    ])"
+        >
+          <img
+            src="res/images/system-monitoring-tool/system-monitoring-tool-img-1.png"
+            alt="Image of Linux System Monitoring Tool"
+            class="initial-image"
+          />
+          <div class="magnifying-glass">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+        <p>
+          <b>Languages</b>
+          <br />
+          <br />C
+          <br />
+          <br />
+          <b>Technologies</b>
+          <br />
+          <br />Make
+        </p>
+      </div>
+      <div class="information_cards">
+        <h2>Item Tracker</h2>
+        <div
+          class="image-container"
+          onclick="openModal([
                     'itemtracker/itemtracker-img4.png',
                      'itemtracker/itemtracker-img1.png',
                     'itemtracker/itemtracker-img2.png',
                     'itemtracker/itemtracker-img3.png',
                     'itemtracker/itemtracker-img5.png'
-                    ])">
-                    <img src="res/images/itemtracker/itemtracker-img4.png" alt="Image of Item Tracker App" class="initial-image">
-                    <div class="magnifying-glass">
-                        <i class="fas fa-search-plus"></i>
-                    </div>
-                </div>
-                <p>
-                    <b>Languages</b>
-                    <br>
-                    <br>
-                    JavaScript,&nbspHTML/CSS
-                    <br>
-                    <br>
-                    <b>Technologies</b>
-                    <br>
-                    <br>Electron,&nbspJQuery,&nbspSQLite
-                </p>
-            </div>
-            <div class="information_cards">
-                <h2>Student Course Portal</h2>
-                <div class="image-container" onclick="openModal([
+                    ])"
+        >
+          <img
+            src="res/images/itemtracker/itemtracker-img4.png"
+            alt="Image of Item Tracker App"
+            class="initial-image"
+          />
+          <div class="magnifying-glass">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+        <p>
+          <b>Languages</b>
+          <br />
+          <br />
+          JavaScript,&nbspHTML/CSS
+          <br />
+          <br />
+          <b>Technologies</b>
+          <br />
+          <br />Electron,&nbspJQuery,&nbspSQLite
+        </p>
+      </div>
+      <div class="information_cards">
+        <h2>Student Course Portal</h2>
+        <div
+          class="image-container"
+          onclick="openModal([
                     'studentcourseportal/studentcourseportal-img2.png',
                     'studentcourseportal/studentcourseportal-img1.png',
                     'studentcourseportal/studentcourseportal-img3.png',
                     'studentcourseportal/studentcourseportal-img4.png',
                     'studentcourseportal/studentcourseportal-img5.png',
                     'studentcourseportal/studentcourseportal-img6.png'
-                    ])">
-                    <img src="res/images/studentcourseportal/studentcourseportal-img2.png" alt="Image of Student Course Portal" class="initial-image">
-                    <div class="magnifying-glass">
-                        <i class="fas fa-search-plus"></i>
-                    </div>
-                </div>
-                <p>
-                    <b>Languages</b>
-                    <br>
-                    <br>Python,&nbspJavaScript,&nbspHTML/CSS
-                    <br>
-                    <br>
-                    <b>Technologies</b>
-                    <br>
-                    <br>Flask,&nbspSQLite
-                </p>
-            </div>
+                    ])"
+        >
+          <img
+            src="res/images/studentcourseportal/studentcourseportal-img2.png"
+            alt="Image of Student Course Portal"
+            class="initial-image"
+          />
+          <div class="magnifying-glass">
+            <i class="fas fa-search-plus"></i>
+          </div>
         </div>
+        <p>
+          <b>Languages</b>
+          <br />
+          <br />Python,&nbspJavaScript,&nbspHTML/CSS
+          <br />
+          <br />
+          <b>Technologies</b>
+          <br />
+          <br />Flask,&nbspSQLite
+        </p>
+      </div>
+    </div>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer-content">
-                <ul class="footer-links">
-                    <li><a href="mailto:Aqeeb.Ahmad@mail.utoronto.ca" target="_blank"><i class="fas fa-envelope"></i>Email</a></li>
-                    <li><a href="https://github.com/AAhmad404" target="_blank"><i class="fab fa-github"></i>GitHub</a></li>
-                </ul>
-            </div>
-            <p class="footer-rights">&copy; 2025 Aqeeb Ahmad.&nbspAll rights reserved.</p>
-        </footer>
-    </body>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <ul class="footer-links">
+          <li>
+            <a href="mailto:Aqeeb.Ahmad@mail.utoronto.ca" target="_blank"
+              ><i class="fas fa-envelope"></i>Email</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/AAhmad404" target="_blank"
+              ><i class="fab fa-github"></i>GitHub</a
+            >
+          </li>
+        </ul>
+      </div>
+      <p class="footer-rights">
+        &copy; 2025 Aqeeb Ahmad.&nbspAll rights reserved.
+      </p>
+    </footer>
+  </body>
 </html>

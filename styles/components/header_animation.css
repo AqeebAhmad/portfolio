@@ -1,38 +1,38 @@
 .heading h1 {
-    animation: heading_animation ease 0.3s;
+  animation: heading_animation ease 0.3s;
 }
 
 .heading p {
-    animation: heading_description ease 0.3s;
+  animation: heading_description ease 0.3s;
 }
 
 .heading span {
-    animation: heading_description ease 0.3s;
+  animation: heading_description ease 0.3s;
 }
 
 @keyframes heading_animation {
-    0% {
-        transform: translateY(-10px);
-    }
-    100% {
-        transform: translateY(0);
-    }
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @keyframes heading_description {
-    0% {
-        transform: translateY(10px);
-    }
-    100% {
-        transform: translateY(0);
-    }
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @keyframes description_animation {
-    0% {
-        transform: translateY(-10px);
-    }
-    100% {
-        transform: translateY(0);
-    }
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
